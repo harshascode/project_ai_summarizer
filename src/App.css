@@ -71,8 +71,19 @@
 
 /* Tailwind Styles */
 
+html::-webkit-scrollbar-track {
+  @apply bg-neutral-100;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+html::-webkit-scrollbar {
+  @apply w-1.5 bg-neutral-100;
+}
+html::-webkit-scrollbar-thumb {
+  @apply bg-[#535353];
+}
+
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6 w-[450px];
 }
 
 .black_btn {
@@ -80,7 +91,7 @@
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
+  @apply mt-5 text-4xl font-extrabold leading-[1.15] text-black sm:text-4xl text-center;
 }
 
 .orange_gradient {

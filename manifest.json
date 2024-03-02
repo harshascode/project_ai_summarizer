@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Qiksum - Article Summarizer",
+    "description": "Introducing Qiksum, the cutting-edge Ai Article Summarizer for streamlined reading.",
+    "version": "1.0.0",
+    "author": "Harsha",
+    "action" : {
+        "default_popup": "index.html",
+        "default_title": "Article Summarizer",
+        "default_icon" : "icon.png"
+    },
+
+    "permissions": [
+        "storage",
+        "identity"
+    ],
+    
+    "icons": {
+        "16" : "icon.png",
+        "48" : "icon.png",
+        "128" : "icon.png"
+    },
+
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
